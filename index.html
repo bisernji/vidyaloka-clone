@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Shiksha Saathi</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3/dist/css/uikit.min.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-967708218">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-967708218');
+</script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/uikit.css">
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3/dist/js/uikit-icons.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/footlight-mt-pro?styles=78190,78187,78188,78189,78183,78184,78185,78186"
+        rel="stylesheet">
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+
+<style>
+
+    #loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+        .about-banner {
+    width: 100%;
+}
+        .loading-gif {
+            width: 100px;
+        }
+        .uk-slider-items {
+            animation: none;
+        }
+        @keyframes scroll {
+            from {
+                transform: translateX(0%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .pe-5 {
+            padding-right: 1.4rem !important;
+        }
+        #userDropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            float: left;
+            min-width: 10rem;
+            padding: 0.5rem 0;
+            margin: 0.125rem 0 0;
+            font-size: 1rem;
+            color: #212529;
+            text-align: left;
+            list-style: none;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-radius: 0.25rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+        }
+        .user_icon:hover #userDropdown {
+            display: block;
+        }
+</style>
+</head>
+
+<body>
+
+<!-- ******************** HEADER START ***************** -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 1rem 0; box-shadow: rgba(99, 99, 99, 0.2) 3px 2px 8px 0px;">
+    <div class="container">
+        <!-- Ensure the logo is always visible by removing any classes that hide it -->
+        <a class="navbar-brand" href="./index.html">
+            <img src="./images/shiksha_saathi_logo.svg" alt="Shiksha Saathi Logo" style="max-height: 50px;"> <!-- You can adjust the max-height as needed -->
+        </a>
+        
+        <!-- Toggle button for tablet view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item pe-5" style="--animation-order: 1">
+                    <a class="nav-link m-0" href="./About-Us">About Us</a>
+                </li>
+                <li class="nav-item pe-5" style="--animation-order: 2">
+                    <a class="nav-link m-0" href="./our-work">Our Work</a>
+                </li>
+                <li class="nav-item pe-5" style="--animation-order: 3">
+                    <a class="nav-link m-0" href="./volunteer">Volunteer</a>
+                </li>
+                <li class="nav-item pe-5" style="--animation-order: 4">
+                    <a class="nav-link m-0" href="./donate">Donate</a>
+                </li>
+                <li class="nav-item pe-5" style="--animation-order: 5">
+                    <a class="nav-link m-0" href="./partner">Partner</a>
+                </li>
+                <li class="nav-item pe-5" style="--animation-order: 6">
+                    <a class="nav-link m-0" href="./blogs-3">Blog</a>
+                </li>
+                <li class="nav-item dropdown pe-5" style="--animation-order: 7">
+                    <a class="nav-link dropdown-toggle m-0" href="#" id="helplineDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Helpline
+                    </a>
+                    <ul class="dropdown-menu animated fadeIn" aria-labelledby="helplineDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="fas fa-phone-alt" style="width: 20px; vertical-align: middle; margin-right: 5px;"></i> 080 4709 1716
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="fab fa-whatsapp" style="width: 20px; vertical-align: middle; margin-right: 5px;"></i> +91 6361653155
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item user_icon pe-5" style="position: relative; --animation-order: 8">
+                    <a class="nav-link m-0" href="#" id="login-trigger">
+                        <span id="userIcon"><img src="./images/user_icon.svg" width="20" alt="User Icon"></span>
+                    </a>
+                    <div id="userDropdown" class="dropdown-menu animated fadeIn">
+                        <a class="dropdown-item" href="https://jupiter.evidyaloka.org/v2/vLounge/">Profile</a>
+                        <a class="dropdown-item" href="https://jupiter.evidyaloka.org/setting/">Setting</a>
+                        <a class="dropdown-item" href="https://jupiter.evidyaloka.org/v2/change_password/">Change Password</a>
+                        <a class="dropdown-item" href="https://jupiter.evidyaloka.org/accounts/logout/">Log Out</a>
+                    </div>
+                </li>
+                <li class="nav-item theme-switch-wrapper" style="--animation-order: 9">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round">
+                            <span class="moon"><i class="fas fa-moon" style="color: white; font-size: 12px;"></i></span>
+                            <span class="sun"><i class="fas fa-sun" style="color: white; font-size: 12px;"></i></span>
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+
+<!-- ******************** HEADER END ***************** -->
+
+    <!-- ******************** HOME BANNER START ***************** -->
+   <section id="home_banner" class="animated fadeIn">
+        <div class="container">
+            <div class="row animated">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h1 class="animated fadeIn">Providing High Quality Education in Rural Areas While Creating Jobs for Rural Youth</h1>
+                    <div class="cta-margin animated fadeIn" style="animation-delay: 0.3s;">
+                        <a href="https://jupiter.evidyaloka.org/volunteer/"><button id="actionButton" class="yellow_btn">Volunteer Now</button></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 right_col animated fadeIn" style="animation-delay: 0.5s;">
+                    <video src="./images/home_banner_img_1_LR.mp4" width="1055" height="925" loop muted playsinline uk-video="autoplay: inview" class="img-fluid animated"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ******************** HOME BANNER END ***************** -->
+
+
+    <!-- ******************** WHO WE ARE START ***************** -->
+    <section id="individual-blog-banner2" class="animated fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12 left_col animated fadeInUp">
+                    <img src="./images/who-we-are-img.png" class="img-fluid">
+                </div>
+                <div class="col-lg-1 col-md-12 col-sm-12"></div>
+                <div class="col-lg-6 col-md-12 col-sm-12 animated fadeInUp" style="animation-delay: 0.2s;">
+                    <h2 class="h2_left_black">Who We Are</h2>
+                    <p class="paragraph_black">Shiksha Saathi is a social enterprise dedicated to providing offline, high quality education in rural areas while creating jobs for rural youth, especially women. Through Vidya Centres, we deliver NEP aligned learning, coaching for students from Class 1-12, and skill-based programs that prepare them for higher education and careers. To ensure sustainability, we run educator training programs that enable rural youth to become teachers and trainers, generating local employment opportunities. Currently, we operate 29 centers, collaborate with 237 schools, and serve over 3,850 students. Recognized by UNDP India, our vision is to expand to 2000 centers in U.P. and launch an AI-powered App for learning and management.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>   
+    <!-- ******************** WHO WE ARE END ***************** -->
+
+
+    <!-- ******************** Transforming the lives of Children START ***************** -->
+        <img src="./images/our_students_top_bg.png" class="our_students_top_bg">
+        <section id="our_vision" class="animated fadeIn">
+        <div class="container">
+            
+            <div class="row pb-1">
+                
+                <div class="col-lg-12 col-md-12 col-sm-12 heading animated fadeInUp">
+                    <h2 class="h2_center_black">Transforming the lives of Children
+                    </h2>
+                </div>
+                
+                <div class="col-6 animated fadeInUp" align="right" style="z-index: 99; animation-delay: 0.2s;">
+                 <a href="https://jupiter.evidyaloka.org/v2/demand/"><button style="" class="yellow_btn">Start Teaching Now</button></a>
+                </div>
+                 <div class="col-6 animated fadeInUp"  align="left"  style="z-index: 99; animation-delay: 0.3s;">
+                   <a href="/donate"><button style="background-color: #fff;" class="yellow_btn_border">Donate a Smile</button></a>
+                </div>
+                
+                <div class="pt-5 col-lg-12 col-md-12 col-sm-12 heading">
+                    <p class="pb-4">I am Archana Jaisal, Co-founder of Shiksha Saathi. I come from a small village in Ghazipur, where my father, once a rickshaw puller, worked hard to secure a railway job that gave me access to education in Banaras (BHU). His struggle inspired me to dedicate my life to bridging the rural-urban education gap so that children in villages don't miss opportunities simply because of where they are born. With a background in education and social innovation, I launched Shiksha Saathi to digitalize schools, coach students, and create jobs for rural youth, especially women. Recognized by UNDP India, I am committed to building an education ecosystem that makes rural children confident, skilled, and future ready.</p>
+                </div>
+            </div>
+             
+            
+         
+            <div uk-slider class="pt-5">
+                <div class="uk-position-relative pt-5">
+                    <div class="uk-slider-container uk-light">
+                        <ul class="uk-slider-items  our-vision-index uk-child-width-1-3@s uk-child-width-1-1">
+                            <div class="slide">
+                                <div class="card green_body">
+                                    <div  style="overflow: hidden;  border-radius: 2.6rem 6rem 2.6rem 2.6rem;">
+                                    <img class="card-img-top .our-vision" src="./images/our-vision-img-01-comfort-of-your-home.png" class="img-fluid">
+                                </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Teach from the comfort of your home
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more slides with similar structure if needed -->
+                            <div class="slide">
+                                <div class="card  orange_body"> <div  style="overflow: hidden;  border-radius: 2.6rem 6rem 2.6rem 2.6rem;">
+                                    <img class="card-img-top" src="./images/our-vision-img-01-child-dream.png" class="img-fluid"></div>
+                                    <div class="card-body">
+                                        <p class="card-text">Make a child’s dream come true
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="card  red_body"> <div  style="overflow: hidden;  border-radius: 2.6rem 6rem 2.6rem 2.6rem;"> 
+                                    <img class="card-img-top" src="./images/our-vision-img-01-livelihood-in-remote-villages.png" class="img-fluid"></div>
+                                    <div class="card-body">
+                                        <p class="card-text">Create livelihood in remote villages
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="card  orange_body"> <div  style="overflow: hidden;  border-radius: 2.6rem 6rem 2.6rem 2.6rem;">
+                                    <img class="card-img-top" src="./images/our-vision-img-02.png" class="img-fluid"></div>
+                                    <div class="card-body">
+                                        <p class="card-text">Stop child labour</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="uk-hidden@s uk-light">
+                        <a class="uk-position-center-left uk-position-small" href="javascript:void(0);" uk-slider-item="previous"><img
+                                src="./images/left arrow.svg" alt=""></a>
+                                <a class="uk-position-center-right uk-position-small" href="javascript:void(0);" uk-slider-item="next"><img
+                                src="./images/right arrow.svg" alt=""></a>
+                    </div>
+
+                    <div class="uk-visible@s">
+                        <a class="uk-position-center-left-out uk-position-small" href="javascript:void(0);" uk-slider-item="previous"><img
+                                width="32px;" src="images/left arrow.svg" alt=""></a>
+                                <a class="uk-position-center-right-out uk-position-small" href="javascript:void(0);" uk-slider-item="next"><img
+                                width="32px;" src="images/right arrow.svg" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+            <div id="loading-overlay" style="display: none;">
+                <img src="./images/1amw1.gif" alt="Loading..." class="loading-gif">
+            </div>
+        </div>
+    </section>
+    <!-- ******************** Transforming the lives of Children END ***************** -->
+
+
+
+    <!-- ******************** VOICE OF EVIDYALOKA START ***************** -->
+    <section id="voice_of_evidyaloka"  >
+        <div class=" ">
+            <div class="row pb-0">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 heading">
+                    <h2 class="h2_center_black">Voice of eVidyaloka</h2>
+                </div>
+            </div>
+    <div class="uk-position-relative uk-visible-toggle uk-light" style="height: 500px" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
+    <ul class="uk-slider-items uk-grid uk-flex uk-flex-middle "  style="height: 500px">
+      <li class="uk-width-3-4 ">
+            <div class="uk-panel">
+              <iframe class="card-paner-img" width="100%" height="100%"
+              src="https://www.youtube.com/embed/W1AXAr-wcTQ?si=z7cu8j7OHo3nzFU6"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+                 
+            </div>
+        </li>
+      <li class="uk-width-3-4 ">
+            <div class="uk-panel">
+              <iframe class="card-paner-img" width="100%" height="100%"
+              src="https://www.youtube.com/embed/nf8F6NAlvto?si=pnHNnTH6vgQEr1yT" 
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+                 
+            </div>
+        </li>
+      <li class="uk-width-3-4 ">
+            <div class="uk-panel">
+              <iframe class="card-paner-img" width="100%" height="100%"
+              src="https://www.youtube.com/embed/bGl4xtrARMQ?si=yg5VINoA2DBdGV9U" 
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+                 
+            </div>
+        </li>
+      <li class="uk-width-3-4 ">
+            <div class="uk-panel">
+              <iframe class="card-paner-img" width="100%" height="100%"
+              
+              src="https://www.youtube.com/embed/251v6Q0GDtM?si=knSRd-En4l4MjcnX" 
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+                 
+            </div>
+        </li>
+        
+      <li class="uk-width-3-4 ">
+            <div class="uk-panel">
+              <iframe class="card-paner-img" width="100%" height="100%"
+              
+              src="https://www.youtube.com/embed/I4_Zr5rTL0E?si=hztzXabtbM3FODkS" 
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+                 
+            </div>
+        </li>
+        
+      <li class="uk-width-3-4 ">
+            <div class="uk-panel">
+              <iframe class="card-paner-img" width="100%" height="100%"
+              
+              src="https://www.youtube.com/embed/1xB987252XY?si=dkcAmDgu2fQYvG37" 
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+                 
+            </div>
+        </li>
+        
+      <li class="uk-width-3-4 ">
+            <div class="uk-panel">
+              <iframe class="card-paner-img" width="100%" height="100%"
+              
+              src="https://www.youtube.com/embed/JA9OUpo64DI?si=zhL9HgwrV5eXD4NO" 
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+                 
+            </div>
+        </li>
+    </ul>
+
+    <a style="margin-left: 7rem;"   class="uk-position-center-left uk-position-small  " href   uk-slider-item="previous"><img
+        width="30px" src="./images/left arrow.svg" alt=""></a>
+    <a  style="margin-right: 7rem;"  class="uk-position-center-right uk-position-small  " href   uk-slider-item="next"><img
+        width="30px" src="./images/right arrow.svg" alt=""></a>
+    </div>
+        </div>
+    </section>
+            <img src="./images/our_students_bottom_bg_2.png" class="our_students_bottom_bg">
+
+    <!-- ******************** VOICE OF EVIDYALOKA END ***************** -->
+
+
+    <!-- ******************** IMPACT SECTION START ***************** -->
+    <section id="impact_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <h2 class="h2_center_black">This is the impact YOU helped us create</h2>
+                </div>
+            </div>
+
+            <div class="row order_row gx-5">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 order_col">
+                    <p class="impact_headings desk">Beneficiaries</p>
+                    <div class="row blurb_row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="impact_blurb green"> 
+                                <h4>2 Lakh</h4>
+                                <p>Overall student Impact</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="impact_blurb blue">
+                                <h4>950+</h4>
+                                <p>Schools Benifited</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="impact_blurb orange">
+                                <h4>1000+</h4>
+                                <p>Job opportunities created in the grassroot levels</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="impact_blurb red">
+                                <h4>3.6 cr</h4>
+                                <p>Views on our Teach Through Television program </p>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 image_col">
+                    <p class="impact_headings mob">Beneficiaries</p>
+                    <img src="./images/beneficiery_img_min.png" class="img-fluid">
+                </div>
+            </div>
+            <div class="row order_row gx-5">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 image_col">
+                    <p class="impact_headings mob">Reach</p>
+                    <img src="./images/reach_img.png" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 order_col">
+                    <p class="impact_headings desk">Reach</p>
+                    <div class="row blurb_row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="impact_blurb green">
+                                <h4>17</h4>
+                                <p> States
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="impact_blurb orange">
+                                <h4>90</h4>
+                                <p>Districts
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="impact_blurb red">
+                                <h4>47</h4>
+                                <p>Aspirational Districts
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="impact_blurb blue">
+                                <h4>514</h4>
+                                <p>Villages
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row order_row gx-5">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 order_col">
+                    <p class="impact_headings desk">With the help of</p>
+                    <div class="row blurb_row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="impact_blurb green">
+                                <h4>6,000+ </h4>
+                                <p>Volunteers</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="impact_blurb orange">
+                                <h4>60+</h4>
+                                <p>On-ground NGO Partners
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="impact_blurb red">
+                                <h4>110+</h4>
+                                <p>Corporates supporting with Volunteers
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                            <div class="impact_blurb blue">
+                                <h4>80+</h4>
+                                <p>  Corporate supporting with Donations
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 image_col">
+                    <p class="impact_headings mob">Partners</p>
+                    <img src="./images/partners_img.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ******************** IMPACT SECTION END ***************** -->
+
+
+    <!-- ******************** OUR STUDENTS START ***************** -->
+    <img src="./images/our_students_top_bg.png" class="our_students_top_bg">
+    <section id="our_students">
+        <div class="container">
+            <div class="row heading_row pb-0">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <h2 class="h2_center_black ">Our Students</h2>
+                </div>
+            </div>
+
+            <div class="row gx-5 pt-0">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12 ">
+                    <div class="student_blurb rural">
+                        <div>
+                            <p class="mb-0">Belong to
+                            </p>
+                            <p class="our_card_seco_text mt-0">Rural Government Schools</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="student_blurb grades">
+                        <div>
+                            <p class="mb-0">Study in </p>
+                            <p class="our_card_seco_text mt-0">Grades 5 to 10
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 ">
+                    <div class="student_blurb state_board">
+                        <div>
+                            <p class="mb-0">Speak
+                            </p>
+                            <p class="our_card_seco_text mt-0">Regional Languages
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 ">
+                    <div class="student_blurb are_taught">
+                        <div>
+                            <p class="mb-0">Are taught</p>
+                            <p class="our_card_seco_text mt-0">Maths, Science, English, Digital literacy and AI</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <img src="./images/our_students_bottom_bg.png" class="our_students_bottom_bg">
+    <!-- ******************** OUR STUDENTS END ***************** -->
+
+
+
+    <!-- ******************** OUR PROGRAMS START ***************** -->
+    <section id="our_programs">
+        <div class="container">
+            <div class="row pb-2">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h2 class="h2_center_black ">Our Programs</h2>
+                </div>
+            </div>
+            <div class="row pt-0 gy-4">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="program_card digital">
+                        <div class="program_content">
+                            <h3 class="our_prgrm_card_h3">Digital Classroom </h3>
+                            <div class="blurbs">
+                                <div class="hours">
+                                    <!--<img src="./images/calendar_icon.svg" class="img-fluid">-->
+                                    <!-- <p class="mt-0 ms-2" style="font-size:1.9rem !important;">8 hours</p> -->
+                                </div>
+                                <div class="online_class">
+                                    <!--<img src="./images/online_class_img.svg" class="img-fluid">-->
+                                    <!-- <p class="mt-0 ms-2" style="font-size:1.9rem !important;">Online class</p> -->
+                                </div>
+                            </div>
+                            <div class="program_desc mt-3">
+                                <p class="txt-xs">We set up Digital Classrooms in remote rural government schools and Volunteers from across the globe teach the children in these schools for two hours a week in the regional language. Science, Math and English are taught along with Basics of Artificial Intelligence, Life skills and Leadership skills.
+                                    Teaching aid is available to the Volunteer Teachers in the form of lesson plans, presentations and videos. 
+                                    </p>
+                            </div>
+                            <!-- <div class="preview_btn">
+                                <a href="#" style="font-size:1.9rem !important;">Preview <img src="./images/white_arrow.svg" width="7"></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="program_card  television">
+                        <div class="program_content">
+                            <h3 class="our_prgrm_card_h3">Teach Through Television</h3>
+                            <div class="blurbs">
+                                <div class="hours">
+                                    <!--<img src="./images/calendar_icon.svg" class="img-fluid">-->
+                                    <!-- <p class="mt-0 ms-2" style="font-size:1.9rem !important;" >1 Week</p> -->
+                                </div>
+                                <div class="online_class">
+                                    <!--<img src="./images/online_class_img.svg" class="img-fluid">-->
+                                    <!-- <p class="mt-0 ms-2" style="font-size:1.9rem !important;" >Online class</p> -->
+                                </div>
+                            </div>
+                            <div class="program_desc mt-3">
+                                <p class="txt-xs">Curated video lessons in the regional languages are broadcast on local television channels in remote locations, based on a published schedule. This program takes advantage of the reach that local television has, hence delivering quality education in the last mile.
+                                </p>
+                            </div>
+                            <!-- <div class="preview_btn">
+                                <a href="#" style="font-size:1.9rem !important;" >Preview <img src="./images/white_arrow.svg" width="7"></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <a href="empowered">
+                    <div class="program_card learning_app ">
+                        <div class="program_content">
+                            <h3 class="our_prgrm_card_h3"> EmpowerED</h3>
+                            <div class="blurbs">
+                                <div class="hours">
+                                   <!-- <img src="./images/calendar_icon.svg" class="img-fluid">-->
+                                    <!-- <p class="mt-0 ms-2" style="font-size:1.9rem !important;" >1 Week</p> -->
+                                </div>
+                                <div class="online_class">
+                                   <!-- <img src="./images/online_class_img.svg" class="img-fluid">-->
+                                    <!-- <p class="mt-0 ms-2" style="font-size:1.9rem !important;" >Online class</p> -->
+                                </div>
+                            </div>
+                            <div class="program_desc mt-3">
+                                <p class="txt-xs">Fostering Digital Literacy among rural students focused on Grades 6 to 9 in government schools.</p>
+                            </div>
+                            <!-- <div class="preview_btn">
+                                <a href="#" style="font-size:1.9rem !important;" >Preview <img src="./images/white_arrow.svg" width="7"></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12" >
+                    <a href="brain">
+                        <div class="program_card brain h-100" > 
+                        <div class="program_content" >
+                            <h3 class="our_prgrm_card_h3" >BRAIN</h3>
+                            <div class="blurbs">
+                                <div class="hours">
+                                   <!-- <img src="./images/calendar_icon.svg" class="img-fluid"> -->
+                                    <!-- <p class="mt-0 ms-2" style="font-size:1.9rem !important;" >1 Week</p> -->
+                                </div>
+                                <div class="online_class">
+                                   <!-- <img src="./images/online_class_img.svg" class="img-fluid"> -->
+                                    <!-- <p class="mt-0 ms-2" style="font-size:1.9rem !important;" >Online class</p> -->
+                                </div>
+                            </div>
+                            <div class="program_desc mt-3">
+                                <p class="txt-xs">eVidyaloka is collaborating with Microsoft to offer Artificial Intelligence courses to students in 300 schools for certain grades. The Project is named ‘Build Rural Artificial Intelligence Network (BRAIN).’
+                                </p>
+                            </div>
+                            <!-- <div class="preview_btn" style="margin-top: 16rem !important;">
+                                <a style="font-size:1.9rem !important;"  href="#">Preview <img src="./images/white_arrow.svg" width="7"></a>
+                            </div> -->
+                        </div>
+                    </div>
+                    </a>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ******************** OUR PROGRAMS END ***************** -->
+
+
+    <!-- ******************** VOLUNTEER START ***************** -->
+    <img src="./images/our_students_top_bg_3.png" class="our_students_top_bg">
+        <div class="volunteer_section_container">
+        <section id="volunteer_section" class="pt-0">
+            <div class="container">
+                <div class="row pb-0">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 heading">
+                        <h2 class="h2_center_black ">Vol of <span>Fame</span></h2>
+                        <p>The passionate Volunteers at eVidyaloka come from all walks of life. They are Students, Homemakers, Working Professionals and Retired Individuals who can speak a regional Indian language and can teach online for two hours a week from the comfort of their homes and offices.
+                            Our volunteers are from across 50+ countries.
+                            </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="/volunteers-of-fame"><button class="yellow_btn">Check out Vol of Fame</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <img src="./images/our_students_bottom_bg_3.png" class="our_students_bottom_bg">
+
+    <!-- ******************** VOLUNTEER END ***************** -->
+
+    <!-- ******************** FUNDING CONTRIBUTORS START ***************** -->
+
+     <section id="funding_section" class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="uk-text-center uk-padding">Funding Contributors</h2>
+                         <div class="uk-section pt-0">                  
+                            <div class="uk-position-relative" tabindex="-1"  uk-slider autoplay="true" autoplay-interval="3000">
+
+                                <div class="uk-slider-container uk-light">
+                                <ul class="uk-slider-items uk-flex uk-flex-center uk-child-width-1-3 uk-child-width-1-5@m  uk-grid">
+                    <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img  width="140px;"  src="./images/AHT logo.png"  alt="">
+                            
+                        </div>
+                    </li>
+                    <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img width="140px;"  src="images/Brillio.png"  alt="">
+                   
+                        </div>
+                    </li>
+                    <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img width="140px;"  src="images/Broadridge.png"  alt="">
+                           
+                        </div>
+                    </li>
+                    <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img width="140px;"  src="images/CAMS.png"  alt="">
+                        
+                        </div>
+                    </li>
+                    <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img  width="140px;" src="images/CGI.png"  alt="">
+                       
+                        </div>
+                    </li>
+                     <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img width="140px;"  src="images/Firstsource.png"  alt="">
+                            
+                        </div>
+                    </li>
+                     <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img width="140px;"  src="images/Goodera.png"  alt="">
+                            
+                        </div>
+                    </li>                           
+                     <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img width="140px;"  src="images/hp-foundation.png"  alt="">
+                            
+                        </div>
+                    </li>                  
+                    <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img width="140px;"  src="images/Infosys Foundation.png"  alt="">
+                            
+                        </div>
+                    </li>
+                     <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img width="140px;"  src="images/infosys-bmp.png"  alt="">
+                            
+                        </div>
+                    </li>                    
+                    <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img width="145px;"  src="images/Innovacx.png"  alt="">
+                         
+                        </div>
+                    </li>
+                    <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img  width="140px;" src="images/L&T Technology Services Limited.png"  alt="">
+                           
+                        </div>
+                    </li>
+                    <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img  width="140px;" src="images/LTIMindtree Foundation.jpg"  alt="">
+                            
+                        </div>
+                    </li>
+                    <li class="uk-flex uk-flex-center uk-flex-middle">
+                        <div class=" ">
+                            <img width="140px;"  src="images/Microsoft.jpg"  alt="">
+                           
+                        </div>
+                    </li>
+                    <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img width="140px;"  src="images/MrCooper.png"  alt="">
+                           
+                        </div>
+                    </li>
+                   <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img width="140px;"  src="images/MurtyTrust.png"  alt="">
+                           
+                        </div>
+                    </li>   
+                           <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img width="140px;"  src="images/nFerence.png"  alt="">
+                           
+                        </div>
+                    </li>  
+                    <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img width="140px;"  src="images/Reliance-Foundation.jpg"  alt="">
+                           
+                        </div>
+                    </li>                                     
+                    <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img  width="140px;" src="images/Signify.png"  alt="">
+                           
+                        </div>
+                    </li>
+                     <li class="uk-flex uk-flex-center uk-flex-middle">
+                              <div class=" ">
+                            <img  width="140px;" src="images/WestBridge.jpg"  alt="">
+                           
+                        </div>
+                    </li>         
+                         
+                </ul>
+                                </div>
+
+                    <!--<a class="uk-position-center-left-out uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right-out uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a> !-->
+                                
+                                
+                                <a class="uk-position-center-left-out uk-position-small" href uk-slider-item="previous"><img  width="32px;" src="images/left arrow.svg" alt=""></a>
+                                <a class="uk-position-center-right-out uk-position-small" href uk-slider-item="next"><img width="32px;" src="images/right arrow.svg" alt=""></a>
+               
+            
+            </div>
+                            
+                             
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+     </section>   
+    <!-- ******************** FUNDING CONTRIBUTORS END ***************** -->
+
+
+    <!-- ******************** JOIN NOW START ***************** -->
+    <section id="join_now">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="content">
+                        <h2 class="h2_left_black">Be a Volunteer and Be the Change</h2>
+                        <p class="paragraph_black mt-3 mb-5">Join us as a volunteer at eVidyaloka. Your time and passion will create a powerful impact on the lives of the children of rural India. 
+                            You can teach from the comfort of your home or office in your regional language. Be a part of this transformative journey.
+                            </p>
+                        <a href="https://jupiter.evidyaloka.org/volunteer/"><button class="yellow_btn mt-4">Join Now</button></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 right_col">
+                    <div class="image">
+                        <img width="580px" src="./images/be a volunteer and be the chnage.png" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ******************** JOIN NOW END ***************** -->
+
+
+    <!-- ******************** OUR APPRAOCH START ***************** -->
+    <section id="our_approach">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 heading">
+                    <h2 class="h2_center_black">Our Approach</h2>
+                    <p>To provide access to quality education to the children in the remotest part of the country, we work collaboratively with a number of stakeholders and create synergy that transforms the education landscape.</p>
+                </div>
+            </div>
+
+            <div class="uk-child-width-1-3@m uk-child-width-1-2@s uk-child-width-1-1 uk-grid-small" uk-grid>
+                
+			<div class="col-lg-4 col-md-12 col-sm-12 col-12" style="overflow: hidden; border-radius: 2rem;">
+				<div class="approach_card children">
+                        		<p class="text-white">Children in rural Government Schools</p>
+                    		</div>
+                	</div>
+                
+			<div class="col-lg-4 col-md-12 col-sm-12 col-12" style="overflow: hidden; border-radius: 2rem;">
+                    		<div class="approach_card volunteers ">
+                        		<p class="text-white">Volunteer Teachers from across the Globe</p>
+                    		</div>
+                	</div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12" style="overflow: hidden; border-radius: 2rem;">
+                    <div class="approach_card public">
+                        <p class="text-white">Supportive School Ecosystem and Government Bodies</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="overflow: hidden; border-radius: 2rem;">
+                    <div class="approach_card community">
+                        <p class="text-white">Social Investors and Funders</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="overflow: hidden; border-radius: 2rem;">
+                    <div class="approach_card education">
+                        <p class="text-white">Inspired Parents and Community</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="overflow: hidden; border-radius: 2rem;">
+                    <div class="approach_card partner">
+                        <p class="text-white">Our Extensive Network of Partners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ******************** OUR APPRAOCH END ***************** -->
+
+    <!-- ******************** JOIN THE JOURNEY START ***************** -->
+    <section id="join_the_journey">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <img src="./images/join_the_journey.png" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <h2 class="h2_left_black">Empower Change by Partnering<br> with Us!</h2>
+                    <p class="paragraph_black">Your efforts empower dreams, uplift communities, and forge a path to a brighter future. Together, let's enable a better tomorrow for the children in remote rural areas of India.</p>
+                    <div class="cta-margin">
+                        <a href="/partner"><button class="yellow_btn ">Our Partners</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ******************** JOIN THE JOURNEY END ***************** -->
+
+
+    <!-- ******************** STORIES AND UPDATES START ***************** -->
+    <img src="./images/story_bg_top.png" class="story_bg_top">
+    <section id="stories_section">
+        <div class="container">
+            <div class="row heading pt-3">
+                <div class="col-lg-2 col-md-12 col-sm-12 col-12"></div>
+                <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+                    <h2 class="h2_center_black ">Stories and Updates</h2>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-12">
+                    <div class="view-all uk-visible@s">
+                        <a href="/blogs-3">View All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="  uk-text-center uk-hidden@s" style="margin-top: -2rem;">
+                <a href="/blogs-3">View All</a>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 mb-5 mt-5">
+                    <div class="story_card professional_teachers" >
+                        <a href="blogs_2024_10_08"><p>Professional Teachers Before. Volunteer Teachers Now.</p></a>
+                    </div>
+                    <div class="title_meta">
+                         <a href="blogs_2024_10_08"><h3 class="fw-bold">Professional Teachers Before. Volunteer Teachers Now.</h3></a>
+                        <span>October 2024</span>
+                    </div>
+                </div>
+
+                 <div class="col-lg-4 col-md-12 col-sm-12 col-12 mb-5 mt-5">
+                    <div class="story_card Automated_Dustbin" >
+                        <a href="blogs_2024_11_1a"><p>Vikram's Innovative Automated Dustbin</p></a>
+                    </div>
+                    <div class="title_meta">
+                         <a href="blogs_2024_11_1a"><h3 class="fw-bold">Vikram's Innovative Automated Dustbin</h3></a>
+                        <span>October 2024</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12 mb-5 mt-5">
+                    <div class="story_card Nandini_Transformation">
+                        <a href="blogs_2024_10_05"><p>Nandini's Academic Transformation</p></a>
+                    </div>
+                    <div class="title_meta">
+                        <a href="blogs_2024_10_05"><h3 class="fw-bold">Nandini's Academic Transformation</h3></a>
+                        <span>October 2024</span>
+                    </div>
+                </div>
+                
+                <!--<div class="col-lg-4 col-md-12 col-sm-12 col-12 mb-5 mt-5">
+                    <div class="story_card quality_education" >
+                        <a href="blogs_2024_04_1"><p>My visit to GHPS, Somalapura, to meet my students</p></a>
+                    </div>
+                    <div class="title_meta">
+                         <a href="blogs_2024_04_1"><h3 class="fw-bold">My visit to GHPS, Somalapura, to meet my students</h3></a>
+                        <span>April 2024</span>
+                    </div>
+                </div>-->
+
+                
+            </div>
+
+        </div>
+    </section>
+    <img src="./images/story_bg_bottom.png" class="story_bg_bottom">
+    <!-- ******************** STORIES AND UPDATES END  ***************** -->
+
+<!-- ******************** FOOTER START ***************** -->
+
+<footer id="site-footer">
+    <div class="container">
+        <div class="row">
+            <!-- Address and Logo Section -->
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                <a href="/"> 
+                    <img src="./images/logo.png" class="img-fluid mb-3" width="200" alt="Shiksha Saathi Logo">
+                </a>
+                <br>
+                <p style="font-weight: 600; font-size: 1.6rem !important;">
+                    Vishal Nagar (Phase-),<br>
+                    Akhari, Kurahuwan,<br>
+                    Varanasi, Uttar Pradesh-221011<br>
+                    Phone: 9919294929<br>
+                    Email: shikshasaathiup@gmail.com
+                </p>
+                <div class="follow_us_icons mt-3">
+                    <a href="https://www.facebook.com/eVidyaloka" target="_blank">
+                        <img src="./images/facebook_icon.svg" width="25" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/evidyaloka_" target="_blank">
+                        <img src="./images/instagram_icon.svg" width="25" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/company/evidyaloka" target="_blank">
+                        <img src="./images/linkedin_icon.svg" width="25" alt="LinkedIn">
+                    </a>
+                    <a href="https://twitter.com/evidyaloka" target="_blank">
+                        <img src="./images/twitter_icon.svg" width="25" alt="Twitter">
+                    </a>
+                    <a href="https://www.youtube.com/@eVidyalokatv" target="_blank">
+                        <img src="./images/youtube_icon.svg" width="25" alt="YouTube">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Who We Are Section -->
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12 footer-section">
+                <p class="fw-bold" style="font-size: 2rem !important;">Who We Are</p>
+                <ul>
+                    <li class="mb-1"><a href="/About-Us">About Us</a></li>
+                    <li class="mb-1"><a href="/events">Events</a></li>
+                    <li class="mb-1"><a href="/rubaru">RUBARU</a></li>
+                    <li class="mb-1"><a href="/roshni">ROSHNI</a></li>
+                    <li class="mb-1"><a href="/volunteers-of-fame">Vol of Fame</a></li>
+                    <li class="mb-1"><a href="/code-of-conduct-3">Code of Conduct</a></li>
+                </ul>
+            </div>
+
+            <!-- What We Do Section -->
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12 footer-section">
+                <p class="fw-bold" style="font-size: 2rem !important;">What We Do</p>
+                <ul>
+                    <li class="mb-1"><a href="/our-work">Our Work</a></li>
+                    <li class="mb-1"><a href="/nsic">NSIC</a></li>
+                    <li class="mb-1"><a href="/brain">BRAIN</a></li>
+                    <li class="mb-1"><a href="/edge">EDGE</a></li>
+                    <li class="mb-1"><a href="/governance">Governance</a></li>
+                    <li class="mb-1"><a href="/blogs-3">Blogs and Updates</a></li>
+                </ul>
+            </div>
+
+            <!-- What You Can Do Section -->
+            <div class="col-lg-3 col-md-6 col-sm-12 col-12 footer-section">
+                <p class="fw-bold" style="font-size: 2rem !important;">What You Can Do</p>
+                <ul>
+                    <li class="mb-1"><a href="https://jupiter.evidyaloka.org/volunteer/">Volunteer</a></li>
+                    <li class="mb-1"><a href="/donate">Donate</a></li>
+                    <li class="mb-1"><a href="/partner">Partner</a></li>
+                    <li class="mb-1"><a href="/career">Career</a></li>
+                    <li class="mb-1"><a href="/faq">FAQ</a></li>
+                    <li class="mb-1"><a href="/contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_bottom mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center">
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center">
+                    <a href="#">
+                        <img src="./images/copyright_icon.svg" width="15" alt="Copyright">
+                        Shiksha Saathi
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-center">
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- ******************** FOOTER END ***************** -->
+
+
+    <!-- Login/Signup Modal -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" align="center" aria-labelledby="modal__Default" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content mob-width" style="width:428px;">
+                <div class="modal-body py-4">
+                    <div>
+                        <div class="form">
+                            <div id="current-form-desc" style="font-size:18px;width:90%" class="show-on-login show-on-fp alert"></div>
+                            <div id='buffer' class="" style='color:red;width:90%'></div>
+                            <div class="tab-content">
+                                <div id="login" class="text-center">
+                                    <h2 class="mb-3">Welcome Back!</h2>
+                                    <form action="https://jupiter.evidyaloka.org/v2/custom_login/" id="login-form" method="POST" accept-charset="utf-8">
+                                        <input type="hidden" name="next" value='https://jupiter.evidyaloka.org/myevidyaloka/'/>
+                                        <div id="validation" class="text-danger mb-3" style="display: none;">The username or password you have entered is invalid</div>
+                                        <div class="form-group mb-3">
+                                            <label for="username" class="form-label">Username <span class="text-danger">*</span></label>
+                                            <input type="text" id="username" name="username" class="form-control" required autocomplete="off" maxlength="80" placeholder="Username/Email">
+                                        </div>
+                                        
+                                        <div class="form-group mb-4">
+                                            <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+                                            <input type="password" id="password" name="password" class="form-control" required autocomplete="off" placeholder="Password">
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-success w-75">Log In</button>
+                                    </form>
+                                    <div class="text-start mt-4">
+                                        <p>Don't have an account? <a href="https://jupiter.evidyaloka.org/volunteer/" class="text-primary">Sign up here</a></p>
+                                        <p>Forgot password? <a href='https://jupiter.evidyaloka.org/accounts/password/reset/' target='_blank' class="text-primary">Click here</a></p>
+                                    </div>
+                                </div>
+                            </div>                        
+                        </div> <!-- /form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+<script>
+    $(document).ready(function () {
+    var baseUrl = "https://jupiter.evidyaloka.org";
+    var myModal = new bootstrap.Modal(document.getElementById('login-modal'), {
+        keyboard: true // Allows closing the modal with the keyboard
+    });
+    $('#login-modal').on('show.bs.modal', function (e) {
+        $('#validation').hide().text('');
+    });
+    $('.vision_slider').slick({
+        speed: 8000,
+        autoplay: false,
+        autoplaySpeed: 0,
+        cssEase: 'linear',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        swipeToSlide: true,
+        centerMode: true,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 981,
+                settings: {
+                    dots: false,
+                    infinite: true,
+                    speed: 2000,
+                    autoplaySpeed: 0,
+                    slidesToShow: 1,
+                    centerMode: false,
+                    variableWidth: false,
+                    arrows: true,
+                }
+            }
+        ]
+    });
+
+    $('.slider').slick({
+        slidesToShow: 3,
+        centerMode: true,
+        centerPadding: "0px",
+        speed: 500,
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 981,
+                settings: {
+                    dots: false,
+                    infinite: true,
+                    speed: 2000,
+                    autoplaySpeed: 0,
+                    slidesToShow: 1,
+                    centerMode: false,
+                    variableWidth: false,
+                    arrows: true,
+                }
+            },
+        ]
+    });
+
+
+    function fetchUserInfo() {
+        $.ajax({
+            url: "https://jupiter.evidyaloka.org/api/check_auth/",
+            type: "GET",
+            xhrFields: {
+                withCredentials: true  // Necessary for session cookies to be included
+            },
+            success: function(data) {
+                console.log('Authentication status:', data); // Log the authentication status
+                if (data.is_authenticated) {
+                    $("#username").text(data.username);  // Update username
+                    var profilePicUrl = baseUrl  + data.profile_picture;
+                    // Update the user icon in the navigation
+                    $("#userIcon").html(`<img src="${profilePicUrl}" width="30" alt="Profile">`);
+                    // Show the dropdown if authenticated
+                    $("#userDropdown").hide();
+                    // Change the href to user profile and remove modal trigger attributes
+                    $("#login-trigger").attr("href", "https://jupiter.evidyaloka.org/v2/vLounge/").removeAttr("data-toggle data-target");
+                    $("#actionButton").text('My Center');
+                    $("#link").attr("href", "");
+                    $(".user_icon").show(); // Show the user icon if authenticated
+
+                    // Show dropdown on hover
+                    $(".user_icon").hover(
+                        function() {
+                            $("#userDropdown").stop(true, true).slideDown("fast");
+                        },
+                        function() {
+                            $("#userDropdown").stop(true, true).slideUp("fast");
+                        }
+                    );
+                } else {
+                    $("#username").text("Guest");
+                    $("#userProfilePic").attr("src", "./images/user_icon.svg");
+                    $("#userIcon").html('<img src="./images/user_icon.svg" width="20">');
+                    // Restore the modal triggers if not authenticated
+                    $("#login-trigger").attr("href", "#").attr("data-toggle", "modal").attr("data-target", "#login-modal");
+                    $("#actionButton").text('Volunteer');
+                    $("#link").attr("href", "https://jupiter.evidyaloka.org/volunteer/");
+                    $("#userDropdown").hide(); // Hide the dropdown if not authenticated
+                }
+            },
+            error: function(error) {
+                console.error('Error fetching user info:', error);
+                $("#username").text("Error");
+                $("#userProfilePic").attr("src", "./images/user_icon.svg");
+                $("#userIcon").html('<img src="./images/user_icon.svg" width="20">');
+                $("#userDropdown").hide(); // Hide the dropdown if there's an error
+            }
+        });
+    }
+
+    fetchUserInfo();
+    });
+
+</script>
+
+<script>
+
+ $(document).ready(function() {
+    // First, attempt to fetch CSRF token when the page is ready
+    // Then, handle the form submission
+    $('#login-form').submit(function(event) {
+        event.preventDefault();
+        var formData = $(this).serialize();
+        $('#loading-overlay').show();
+
+        // Proceed with the AJAX request if CSRF token is present
+        $.ajax({
+            type: 'POST',
+            url: 'https://jupiter.evidyaloka.org/v2/custom_login/',
+            data: formData,
+            xhrFields: {
+            withCredentials: true
+            },
+            success: function(response) {
+                console.log('Login Successful', response);
+                saveActivity('Logged In', function() {
+                    // Redirect to dashboard or perform other actions on success
+                    window.location.href = 'https://jupiter.evidyaloka.org/myevidyaloka/';
+                });
+            },
+            error: function(xhr, status, error) {
+                console.error("Error Status: " + status);
+                console.error("Error Message: " + error);
+                console.error("Response Text: " + xhr.responseText);
+                alert("Error processing your login request. See console for more details.");
+            }
+        });
+    });
+
+    function saveActivity(activityName, callback) {
+    var ajaxUrl = 'https://jupiter.evidyaloka.org/ajax/save_user_activity_by_ajax/?activity_name=' + activityName + '&activity_type=Action';
+    $.ajax({
+        url: ajaxUrl,
+        type: 'GET',  
+        xhrFields: {
+            withCredentials: true
+        },
+        success: function(data) {
+            console.log('Activity logged');
+            callback();  // Call the callback if provided
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.log('Error logging activity:', textStatus, errorThrown);
+            console.log('Error details:', jqXHR.responseText);
+        }
+    });
+    }
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+    var slider = UIkit.slider(document.querySelector('[uk-slider]'));
+
+    document.querySelectorAll('[uk-slider-item="previous"]').forEach(function (element) {
+        element.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            slider.show('previous');
+        });
+    });
+
+    document.querySelectorAll('[uk-slider-item="next"]').forEach(function (element) {
+        element.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            slider.show('next');
+        });
+    });
+});
+
+    // Function to get cookie by name
+    function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = jQuery.trim(cookies[i]);
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+    }
+
+</script>
+<script>
+$(document).ready(function() {
+    // Function to save activity
+   
+    // Check user authentication on page load
+    checkAuthentication();
+
+    // Handle the login form submission
+    function checkAuthentication() {
+        $.ajax({
+            url: 'https://jupiter.evidyaloka.org/api/check_auth/',
+            type: 'GET',
+            success: function(data) {
+                if (data.is_authenticated) {
+                    updateUserInterface(data); // Update UI with user info
+                    $('.user_icon').off('click'); // Remove event listener for modal if authenticated
+                } else {
+                    // Bind the modal trigger if not authenticated
+                    $('#login-trigger').on('click', function() {
+                        $('#login-modal').modal('show');
+                    });
+                }
+            },
+            error: function(error) {
+                console.error('Error fetching user info:', error);
+            }
+        });
+    }
+
+    function logout_from_site() {
+        $.ajax({
+            url: 'https://jupiter.evidyaloka.org/accounts/logout/',
+            type: 'POST',
+            headers: {'X-CSRFToken': getCookie('csrftoken')},  // Correct way to include CSRF token from cookies
+            success: function() {
+                window.location.href = 'https://jupiter.evidyaloka.org';  // Redirect to home or login page
+            },
+            error: function() {
+                alert('Logout failed. Please try again.');
+            }
+        });
+    }
+    function updateUserInterface(data) {
+        var profilePictureUrl = data.profile_picture || './images/user_icon.svg';
+        var userName = data.username || 'Guest';
+        var userDropdownHtml = `
+            <div class="dropdown">
+                <a href="https://jupiter.evidyaloka.org/myevidyaloka/" class="p-2 hide_for_mob">
+                    <img src="${profilePictureUrl}" width="40" alt="Profile" class="rounded-circle">
+                </a>
+                <a href="#" class="dropdown-toggle hide_for_portal hide_arrow" data-toggle="dropdown"></a>
+                <div class="dropdown-menu custom_ui_old">
+                    <a class="dropdown-item" href="https://jupiter.evidyaloka.org/myevidyaloka/">MyEvidyaloka</a>
+                    <a class="dropdown-item" href="https://jupiter.evidyaloka.org/v2/vLounge/">Profile</a>
+                    <a class="dropdown-item" href="https://jupiter.evidyaloka.org/setting/">Setting</a>
+                    <a class="dropdown-item" href="https://jupiter.evidyaloka.org/v2/change_password/">Change Password</a>
+                    <a class="dropdown-item" href="https://jupiter.evidyaloka.org/accounts/logout/">Log Out</a>
+                </div>
+            </div>`;
+        $('#userIcon').html(userDropdownHtml);
+        $('.dropdown-toggle').dropdown(); // Initialize dropdown functionality if not automatically applied
+        $('.dropdown-menu a').on('click', function(e) {
+            e.stopPropagation(); // Stop the event from bubbling up to parent elements
+        });
+        $('#login-trigger').off('click').on('click', function(e) {
+            e.preventDefault();  // Prevent the default action
+            window.location.href = 'https://jupiter.evidyaloka.org/myevidyaloka/';
+        });
+    }
+});
+</script>
+<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=70724496"></script>
+
+</body>
+</html>
+<script src="js/uikit.min.js"></script>

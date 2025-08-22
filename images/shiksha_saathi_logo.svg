@@ -1,0 +1,26 @@
+<svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="80" fill="#ffffff" rx="8"/>
+  
+  <!-- Graduation cap icon -->
+  <g transform="translate(10, 15)">
+    <!-- Cap base -->
+    <polygon points="25,20 5,25 25,30 45,25" fill="#4a90a4" stroke="#2c5f6f" stroke-width="1"/>
+    <!-- Cap top -->
+    <ellipse cx="25" cy="20" rx="20" ry="5" fill="#5ba0b8"/>
+    <!-- Tassel -->
+    <line x1="45" y1="25" x2="50" y2="35" stroke="#ff6b35" stroke-width="2"/>
+    <circle cx="50" cy="35" r="2" fill="#ff6b35"/>
+  </g>
+  
+  <!-- Text: SHIKSHA -->
+  <text x="65" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4a90a4">SHIKSHA</text>
+  
+  <!-- Text: SAATHI -->
+  <text x="65" y="55" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4a90a4">SAATHI</text>
+  
+  <!-- Decorative element -->
+  <circle cx="180" cy="25" r="3" fill="#ff6b35"/>
+  <circle cx="185" cy="35" r="2" fill="#5ba0b8"/>
+  <circle cx="175" cy="45" r="2" fill="#ff6b35"/>
+</svg>
